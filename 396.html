@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Литровая кружка Spaten — пивоварни, которая открывает Октоберфест — № 396</title>
-<meta name="description" content="Spaten по-немецки значит «лопата».">
+<meta name="description" content="Классический литровый стеклянный Масскруг (Maßkrug) знаменитой мюнхенской пивоварни Spaten от одной из 6-ти главных пивоварен Октоберфеста.">
 <meta property="og:title" content="Литровая кружка Spaten — пивоварни, которая открывает Октоберфест">
-<meta property="og:description" content="Spaten по-немецки значит «лопата».">
+<meta property="og:description" content="Классический литровый стеклянный Масскруг (Maßkrug) знаменитой мюнхенской пивоварни Spaten от одной из 6-ти главных пивоварен Октоберфеста.">
 <meta property="og:type" content="article">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍺%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap&subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@500&family=UnifrakturMaguntia&display=swap&subset=cyrillic" rel="stylesheet">
 <meta name="theme-color" content="#f2ece1">
 <style>
 *,*::before,*::after{box-sizing:border-box}
@@ -82,6 +82,117 @@ mark{background:var(--ink);color:#fff;padding:.08em .3em;-webkit-box-decoration-
  .layout{grid-template-columns:1fr;gap:28px}.spec{position:static}.facts{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-top:0}.fact:nth-child(odd){border-right:1px solid var(--rule)}
  .history .body{grid-template-columns:1fr}}
 
+/* паспорт экспоната */
+.passport{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 18px}
+.passport li{display:flex;flex-direction:column;padding:.45em .9em .5em;border:1px solid var(--rule);border-radius:12px;line-height:1.2;min-width:0}
+.passport span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.passport b{font-size:16px;overflow-wrap:anywhere}
+/* подзаголовки и акценты */
+.sub{font-size:1.32em;line-height:1.22;margin:1.8em 0 .65em}
+.pull{font-size:1.13em;line-height:1.55;margin:1.6em 0;padding:.15em 0 .15em 1em;border-left:4px solid var(--accent)}
+.note{margin:1.5em 0;padding:14px 18px;border:1px dashed var(--accent);border-radius:10px;font-size:.93em;line-height:1.6}
+.note p{margin:0}
+.note+.note{margin-top:-.6em}
+.note .runin{display:inline!important;margin:0!important;font-size:1em!important}
+ul.list li strong.li-k{font-weight:700}
+.story ul.list,.history ul.list{margin:.4em 0 1.4em}
+/* хронология */
+.timeline{position:relative;margin:.6em 0 1.8em;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:2px;background:var(--accent);opacity:.55}
+.tl-item{position:relative;margin-bottom:16px}
+.tl-item:last-child{margin-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-28px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg,#fff);border:3px solid var(--accent);box-sizing:border-box}
+.tl-year{display:block;font-weight:700;font-size:1.12em;line-height:1.3;margin-bottom:2px}
+.tl-item p{margin:0}
+@media (max-width:640px){
+  .passport li{flex:1 1 auto}
+  .passport b{font-size:15px}
+  .sub{font-size:1.22em}
+  .pull{font-size:1.06em;padding-left:.8em}
+  .note{padding:12px 14px}
+  .timeline{padding-left:26px}.tl-item::before{left:-24px}.timeline::before{left:6px}
+}
+
+.side{position:sticky;top:20px}
+.spec{position:static}
+.passport{gap:0;border:2px solid var(--ink);border-bottom:0;margin:0}
+.passport li{flex:1 1 100%;flex-direction:row;justify-content:space-between;gap:10px;border:0;border-bottom:1px solid var(--rule);border-radius:0;background:#fffdf8;padding:9px 14px}
+.passport span{font-family:"IBM Plex Mono",monospace;font-size:12px;opacity:1}
+.passport b{font-family:"Oswald",sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.03em;text-align:right}
+.sub{font-family:"Oswald",sans-serif;font-weight:700;text-transform:uppercase;color:var(--red)}
+.pull{font-family:"Oswald",sans-serif;font-weight:500;text-transform:uppercase;font-size:1.28em;line-height:1.3;border-left:8px solid var(--red);padding-left:.7em}
+.note{border:2px solid var(--ink);border-radius:0;background:#fffdf8;font-family:"IBM Plex Mono",monospace;font-size:.82em;line-height:1.65}
+/* история: одна колонка, нумерованные разделы */
+.history .body{display:block}
+.history .body p{padding-top:0;border-top:0;margin-bottom:1.05em;counter-increment:none}
+.history .body p::before{content:none}
+.history .body>p.rp{counter-increment:sec;padding-top:40px;border-top:1px solid var(--ink);margin-top:1.6em}
+.history .body>p.rp::before{content:counter(sec,decimal-leading-zero);position:absolute;top:8px;left:0;font-family:"IBM Plex Mono",monospace;color:var(--red);font-size:14px}
+@media (max-width:860px){.side{position:static}.passport li{flex:1 1 50%}}
+
+/* иллюстрации */
+.fig{margin:2em 0 2.2em;text-align:center}
+.fig-art{border-radius:16px;overflow:hidden;box-shadow:0 14px 34px rgba(40,25,5,.14)}
+.fig-art>svg.art{display:block;width:100%;height:auto;max-height:420px;margin:0 auto}
+.fig.tall .fig-art>svg.art{max-height:460px}
+.fig figcaption{font-size:.84em;line-height:1.4;margin-top:.75em;font-style:italic;opacity:.85}
+.fig figcaption::before{content:"";display:inline-block;width:22px;height:2px;background:var(--accent);vertical-align:.3em;margin-right:.55em}
+.legend{list-style:none;counter-reset:lg;display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;text-align:left;padding:0;margin:14px 0 0;font-size:.9em}
+.legend li{counter-increment:lg;display:flex;gap:.6em;align-items:baseline}
+.legend li::before{content:counter(lg);flex:none;width:1.6em;height:1.6em;border-radius:50%;background:#1d3a78;color:#fff;font-weight:700;font-size:.8em;display:inline-flex;align-items:center;justify-content:center}
+.divider{margin:46px 0 8px}
+.divider>svg.art{width:100%;height:auto;display:block}
+.divider.flush{margin:56px 0 -1px;position:relative;z-index:1}
+.divider.flush+.history{margin-top:0!important}
+.divider.fest .treats{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:10px}
+.divider.fest .treats>svg{width:90px;height:auto}.divider.fest .treats>svg:nth-child(2){width:110px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");opacity:var(--grain,0)}
+@media (max-width:640px){.fig{margin:1.5em -6px 1.8em}.legend{grid-template-columns:1fr}.divider{margin-top:34px}
+  .divider.fest .treats>svg{width:64px}.divider.fest .treats>svg:nth-child(2){width:80px}}
+
+:root{--grain:.06}
+.fig-art{border-radius:0;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--red)}
+.fig figcaption{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:.72em;text-transform:uppercase;letter-spacing:.04em}
+
+svg.art{display:block;width:100%;height:auto;overflow:visible}
+@keyframes a-spin{to{transform:rotate(360deg)}}
+@keyframes a-tw{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes a-tw2{0%,100%{opacity:1}45%{opacity:.55}55%{opacity:.95}}
+@keyframes a-glow{0%,100%{opacity:1;filter:drop-shadow(0 0 4px #ffd75e)}50%{opacity:.55;filter:none}}
+@keyframes a-bub{0%{transform:translateY(0);opacity:0}15%{opacity:.85}100%{transform:translateY(-70px);opacity:0}}
+@keyframes a-sway{0%{transform:rotate(-6deg)}100%{transform:rotate(6deg)}}
+@keyframes a-swing{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes a-bounce{to{transform:translateY(-3px)}}
+@keyframes a-nf{0%{transform:translate(0,0);opacity:0}20%{opacity:1}100%{transform:translate(14px,-60px);opacity:0}}
+@keyframes a-mallet{0%,55%{transform:rotate(-24deg)}70%{transform:rotate(4deg)}78%{transform:rotate(-2deg)}100%{transform:rotate(-24deg)}}
+@keyframes a-pop{0%,62%{transform:translate(0,0) scale(.2);opacity:0}70%{opacity:1}100%{transform:translate(-10px,18px) scale(1);opacity:0}}
+@keyframes a-flap{0%,100%{transform:skewX(0)}50%{transform:skewX(8deg)}}
+@keyframes a-wave{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-4deg) scaleX(.94)}}
+@keyframes a-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes a-pulse{0%,100%{opacity:1}50%{opacity:.7}}
+@keyframes a-shout{0%,55%{opacity:0;transform:scale(.6)}72%{opacity:1;transform:scale(1.08)}90%,100%{opacity:1;transform:scale(1)}}
+.art .spin{transform-box:view-box;animation:a-spin 48s linear infinite}
+.art .tw{animation:a-tw 2.6s ease-in-out infinite}
+.art .tw2{animation:a-tw2 5s ease-in-out infinite}
+.art .glow{animation:a-glow 2.4s ease-in-out infinite}
+.art .bub{animation:a-bub 3.2s linear infinite}
+.art .sway{transform-box:view-box;animation:a-sway 3.4s ease-in-out infinite alternate}
+.art .swing{transform-box:view-box;animation:a-swing 4s ease-in-out infinite}
+.art .bounce{animation:a-bounce .55s ease-in-out infinite alternate}
+.art .nf{animation:a-nf 3.9s linear infinite}
+.art .mallet{transform-box:view-box;animation:a-mallet 2.8s cubic-bezier(.5,0,.6,1) infinite}
+.art .pop{transform-box:fill-box;animation:a-pop 2.8s ease-out infinite}
+.art .stream{animation:a-tw 2.8s ease-in-out infinite}
+.art .flap{transform-box:view-box;animation:a-flap 3s ease-in-out infinite}
+.art .wave{transform-box:view-box;animation:a-wave 2.6s ease-in-out infinite}
+.art .bob{animation:a-bob 3s ease-in-out infinite}
+.art .pulse{animation:a-pulse 2s ease-in-out infinite}
+.art .shout{transform-box:fill-box;transform-origin:50% 50%;animation:a-shout 2.8s ease-out infinite}
+@media (prefers-reduced-motion:reduce){.art *{animation:none!important}}
+
+.art .cab{transform-box:view-box;animation:a-spin 48s linear infinite reverse}
+@media (prefers-reduced-motion:reduce){.art .cab{animation:none}}
+
 /* мобильные доработки */
 html,body{overflow-x:hidden;overflow-x:clip}
 h1{overflow-wrap:break-word}
@@ -114,30 +225,196 @@ mark{padding:.08em .3em;background:linear-gradient(var(--ink),var(--ink)) no-rep
 .js .fact.rv:not(.in){transform:translateX(-20px)}
 .js .history .body>p.rv,.js .history h2.rv{transform:none}
 .js .history .body>p.rv.in,.js .history h2.rv.in{animation:wipe 1s var(--d,0s) cubic-bezier(.7,0,.2,1) both}
-</style>
+
+/* ---------- пластины: гравюры и схемы */
+.plate{position:relative;margin:2.2em 0 2.4em;padding:22px 22px 16px;background:#fbf8f1;color:#2a241c;
+  border:1px solid color-mix(in srgb,var(--ink) 45%,transparent);box-shadow:inset 0 0 0 5px #fbf8f1,inset 0 0 0 6px color-mix(in srgb,var(--ink) 30%,transparent),0 16px 34px -20px rgba(40,25,5,.45)}
+.plate-k{text-align:center;font:600 12px/1.3 Georgia,"PT Serif",serif;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin:2px 0 14px}
+.plate-k::before,.plate-k::after{content:"◆";font-size:8px;vertical-align:2px;margin:0 .9em;opacity:.6}
+.plate svg.eng{display:block;width:100%;height:auto;max-height:360px;margin:0 auto}
+.plate figcaption{margin-top:12px;text-align:center;font:italic 14px/1.45 Georgia,"PT Serif",serif;color:#5d5345}
+.plate .cr{display:block;font-style:normal;font-size:12px;opacity:.8}
+/* график */
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ct{font:700 13px/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;color:#2a241c;margin-bottom:10px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:170px;border-bottom:1px solid #b9ad97;padding-top:22px}
+.bar{position:relative;flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;outline:none}
+.bar .b{width:100%;max-width:44px;height:var(--h);background:color-mix(in srgb,var(--ink) 55%,#fff);border-radius:4px 4px 0 0;transition:background .2s}
+.bar.on .b,.bar:hover .b,.bar:focus .b{background:var(--ink)}
+.bar .v{font:700 13px/1 system-ui,sans-serif;color:#2a241c;margin-bottom:5px}
+.bar .y{position:absolute;bottom:-22px;font:12px/1 system-ui,sans-serif;color:#5d5345}
+.bar .tip{position:absolute;bottom:calc(var(--h) + 30px);left:50%;transform:translateX(-50%);white-space:nowrap;background:#2a241c;color:#fff;font:12px/1.35 system-ui,sans-serif;padding:6px 9px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:3}
+.bar .tip small{opacity:.75;font-size:12px}
+.bar:hover .tip,.bar:focus .tip{opacity:1}
+.chart .tbl{margin-top:30px;font:13px/1.4 system-ui,sans-serif}
+.chart .tbl summary{cursor:pointer;color:#5d5345;min-height:32px}
+.chart table{border-collapse:collapse;width:100%;margin-top:6px}.chart td,.chart th{border-bottom:1px solid #e1d7c4;padding:5px 6px;text-align:left}
+@media (max-width:560px){.charts{grid-template-columns:1fr;gap:34px}.bars{height:140px}}
+/* вехи */
+.mst{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:m}
+.mst li{position:relative;padding:14px 14px 14px 0;border-top:2px solid var(--ink)}
+.mst li::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;background:#fbf8f1;border:2px solid var(--ink);transform:rotate(45deg)}
+.mst b{display:block;font:700 24px/1.1 Georgia,serif;color:var(--ink);margin:6px 0 4px}
+.mst span{font-size:15px;line-height:1.4}
+@media (max-width:640px){.mst{grid-template-columns:1fr}.mst li{border-top:0;border-left:2px solid var(--ink);padding:4px 0 14px 18px}.mst li::before{top:8px;left:-7px}.mst b{margin-top:0}}
+/* дерево */
+.tr{display:flex;flex-direction:column;align-items:center}
+.tr .row{display:flex;justify-content:center;gap:16px;width:100%}
+.tr .nd{flex:0 1 220px;text-align:center;padding:10px 12px;border:1px solid var(--ink);background:#fff;font-size:14.5px;line-height:1.35}
+.tr .nd b{display:block;font:700 16px/1.2 Georgia,serif;color:var(--ink);margin-bottom:2px}
+.tr .nd.wide{flex-basis:320px}.tr .nd.on{background:var(--ink);color:#fff}.tr .nd.on b{color:#fff}
+.tr .join,.tr .split,.tr .line{position:relative;height:26px;width:236px}
+.tr .join{border:1px solid var(--ink);border-top:0;height:14px;margin-bottom:12px}
+.tr .join::after{content:"";position:absolute;left:50%;top:13px;height:12px;border-left:1px solid var(--ink)}
+.tr .split{border:1px solid var(--ink);border-bottom:0;height:14px;margin-top:12px}
+.tr .split::before{content:"";position:absolute;left:50%;top:-13px;height:12px;border-left:1px solid var(--ink)}
+.tr .line{width:1px;background:var(--ink);height:22px}
+/* шкалы */
+.g{margin:6px 0 18px}.gl{font-size:15px;margin-bottom:6px}.gl b{color:var(--ink)}
+.gt{position:relative;height:14px;background:#ece4d3;border-radius:7px;overflow:hidden}
+.gf{position:absolute;top:0;bottom:0;left:var(--a);width:calc(var(--b) - var(--a));background:var(--ink);border-radius:7px}
+.gf.rng{min-width:8px}
+.gs{display:flex;justify-content:space-between;font:12px/1 system-ui,sans-serif;color:#7a6c58;margin-top:5px}
+/* выкуп */
+.ransom .big{text-align:center;font:700 clamp(38px,6vw,56px)/1 Georgia,serif;color:var(--ink)}
+.ransom .big small{display:block;font:italic 16px/1.3 Georgia,serif;color:#5d5345;margin-top:6px}
+.ransom .mugs{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:18px auto 8px;max-width:420px}
+.ransom svg.mi{width:28px;height:34px}
+.ransom .pw{width:28px;height:34px;display:inline-block}.ransom .part{display:block;overflow:hidden;height:34px}
+.ransom .leg{text-align:center;font-size:14px;color:#5d5345;display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}
+.ransom .leg svg.mi{width:18px;height:22px}
+/* анатомия */
+.anat .lg{columns:2;margin:12px 0 0;padding-left:1.4em;font-size:15px}
+.anat .lg li::marker{color:#c4122f;font-weight:700}
+@media (max-width:560px){.anat .lg{columns:1}}
+/* лента основания шестёрки */
+.tl6{position:relative;height:430px;margin:10px 0}
+.tl6 .axis{position:absolute;left:0;right:0;top:50%;height:2px;background:#2a241c}
+.tl6 .tk{position:absolute;left:var(--x);top:10px;transform:translateX(-50%);font:12px/1 system-ui,sans-serif;color:#7a6c58}
+.tl6 .tk::before{content:"";position:absolute;left:50%;top:-12px;height:8px;border-left:1px solid #2a241c}
+.tl6-i{position:absolute;left:var(--x);width:120px;margin-left:-60px;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:#2a241c}
+.tl6-i.up{bottom:calc(50% + 18px)}.tl6-i.dn{top:calc(50% + 34px)}
+.tl6-i::after{content:"";position:absolute;left:50%;width:9px;height:9px;margin-left:-4.5px;background:var(--c);transform:rotate(45deg)}
+.tl6-i.up::after{bottom:-23px}.tl6-i.dn::after{top:-39px}
+.tl6-i .cr6{width:92px;transition:transform .5s cubic-bezier(.34,1.56,.64,1)}.tl6-i:hover .cr6{transform:translateY(-4px) scale(1.04)}
+.tl6-i .nm{font:700 16px/1.2 Georgia,serif;margin-top:6px}
+.tl6-i .ct6{font:12.5px/1.3 system-ui,sans-serif;color:#7a6c58}
+@media (max-width:860px){
+  .tl6{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:26px 14px;padding-left:0}
+  .tl6 .axis{display:none}
+  .tl6-i{position:static;margin:0;width:auto}.tl6-i::after{display:none}
+}
+
+.bav-band{height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14'%3E%3Crect width='24' height='14' fill='%23ffffff'/%3E%3Cpath d='M0 7 12 0 24 7 12 14z' fill='%230b5aa6'/%3E%3C/svg%3E") repeat-x;background-size:24px 12px;border-bottom:2px solid #0b5aa6}
+.hcrest>svg.eng{display:block;width:100%;height:auto}
+.fdiv{max-width:420px;margin:46px auto 0;padding:0 20px}
+.fdiv>svg.eng{display:block;width:100%;height:auto}
+.fdiv+.history,.fdiv+section.history{margin-top:24px!important}
+.plate{border-radius:0}
+/* баварская рамка рисунков */
+.fig-art{padding:9px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14'%3E%3Crect width='24' height='14' fill='%23ffffff'/%3E%3Cpath d='M0 7 12 0 24 7 12 14z' fill='%230b5aa6'/%3E%3C/svg%3E") repeat;background-size:20px 12px;border-radius:14px}
+.fig-art>svg.art{border-radius:8px}
+.fr{font-family:"UnifrakturMaguntia",serif;font-size:26px;line-height:1;text-align:center;color:var(--accent);margin:0 0 10px}
+.fr-h{font-size:30px;margin:0 0 6px;text-align:inherit}
+.history .fr-h{text-align:center}
+/* фестон под шапкой — как у шатров */
+.valance{height:16px;background:radial-gradient(circle at 10px 0,var(--vc) 9.5px,transparent 10px) repeat-x;background-size:20px 16px;position:relative;z-index:3;margin-bottom:-8px}
+/* низ страницы */
+.treats{max-width:760px;margin:40px auto 0;padding:0 20px}
+.treats>svg.art{width:100%;height:auto;display:block}
+.tr3{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:8px}
+.tr3>svg.art{width:76px;height:auto}.tr3>svg.art:nth-child(2){width:96px}
+/* новые схемы */
+.sbar{display:flex;height:46px;border:1px solid var(--ink);overflow:hidden}
+.sbar span{display:flex;align-items:center;justify-content:center;gap:.35em;font-size:14.5px;color:#fff;white-space:nowrap}
+.sbar .s1{background:var(--ink)}.sbar .s2{background:color-mix(in srgb,var(--ink) 55%,#fff)}
+.stot{text-align:center;margin-top:10px;font:16px Georgia,serif}.stot b{color:var(--ink);font-size:22px}
+.wev,.sc3w{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:center}
+.we,.sc3{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 6px;border:1px solid transparent}
+.we.on,.sc3.on{border-color:var(--ink);background:#fff}
+.we svg.eng{width:70px;height:auto}.sc3 svg.art{width:84px;height:auto}
+.we b,.sc3 b{font:700 17px/1.2 Georgia,serif;color:var(--ink)}
+.we span,.sc3 span{font-size:14px;line-height:1.35}
+@media (max-width:560px){.wev,.sc3w{grid-template-columns:1fr}.we,.sc3{flex-direction:row;text-align:left;gap:12px}.we svg.eng{width:48px;flex:none}.sc3 svg.art{width:60px;flex:none}
+  .we b,.sc3 b{min-width:84px}.sbar span{font-size:13px}.fr{font-size:22px}.tr3>svg.art{width:56px}.tr3>svg.art:nth-child(2){width:72px}}
+.valance{--vc:#b3121b}.fig-art{border-radius:0}.fig-art>svg.art{border-radius:0}</style>
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('js')</script>
 </head>
 <body class="t-spaten">
+<div class="bav-band" aria-hidden="true"></div>
 <div class="progress" aria-hidden="true"></div>
-<main class="wrap"><header class="hero"><div class="t"><div class="code">Экспонат № 396</div><h1><span class="star" aria-hidden="true">★</span> Литровая кружка Spaten — пивоварни, которая открывает Октоберфест</h1></div>
-<div class="block"><span class="nm">Spaten</span><svg viewBox="0 0 40 80" aria-hidden="true"><rect x="17" y="0" width="6" height="40" fill="#fff"/><rect x="10" y="0" width="20" height="5" rx="2" fill="#fff"/><path d="M6 38h28v24c0 9-6 16-14 16S6 71 6 62z" fill="#fff"/></svg></div></header>
-<div class="layout"><aside class="spec"><h3>Главное</h3><ul class="facts"><li class="fact"><b>1867</b><span>шатёр Schottenhamel — самый старый</span></li><li class="fact"><b>10 000</b><span>мест в шатре</span></li><li class="fact"><b>12:00</b><span>первая суббота: «O’zapft is!»</span></li><li class="fact"><b>2011</b><span>кружка сделана в Австрии</span></li></ul></aside><div><figure class="photo"><img src="img/396.jpg" alt="Литровая кружка Spaten — пивоварни, которая открывает Октоберфест" loading="lazy" onerror="this.parentNode.remove()"></figure><article class="story"><p>Spaten по-немецки значит «лопата». На гербе — солодовая лопата (ею пивовары когда-то вручную ворошили прорастающий ячмень) и буквы G и S в честь владельца, Габриэля Зедльмайра.</p>
-<p>Главная гордость Spaten — открытие праздника. В шатре Schottenhamel, самом старом на Октоберфесте (с <b class="n">1867</b> года, около <b class="n">10 000 мест</b>), ровно в полдень первой субботы <mark>мэр Мюнхена вбивает кран в бочку Spaten и кричит «O’zapft is!»</mark>. Только после этого начинают наливать во всех остальных шатрах, а первая кружка по традиции достаётся премьер-министру Баварии.</p>
-<p>Кружка сделана в <b class="n">2011</b> году в Австрии: на дне надпись AUSTRIA и клеймо стекольного завода Stölzle-Oberglas — одного из старейших стекольных производств Австрии (его история начинается в <b class="n">1805</b> году).</p></article><section class="history"><h2>ИСТОРИЯ ПИВОВАРНИ SPATEN</h2><div class="body"><p><span class="runin">Самая маленькая.</span> Пивоварня на нынешней Нойхаузер-штрассе впервые упоминается в налоговой книге Мюнхена в <b class="n">1397</b> году: там записан «Вельзер-пивовар». С <b class="n">1622</b> по <b class="n">1704</b> год ею владела семья Шпат (Spatt), и с тех пор пивоварня носит «говорящее» имя Spaten — «лопата». В <b class="n">1807</b> году её купил королевский придворный пивовар Габриэль Зедльмайр. Тогда это была самая маленькая пивоварня Мюнхена.</p>
-<p><span class="runin">Шпионская трость.</span> В <b class="n">1833</b> году сын владельца, Габриэль Зедльмайр-младший, вместе с другом, венским пивоваром Антоном Дрехером, отправился изучать британские пивоварни. По известной истории, <mark>друзья тайком набирали пробы сусла и пива в полую трость</mark> — настоящий промышленный шпионаж. Домой Габриэль привёз новые методы контроля пивоварения, например измерение плотности сусла сахарометром.</p>
-<p><span class="runin">Холод круглый год.</span> В <b class="n">1873</b> году Зедльмайр стал финансировать опыты молодого инженера Карла Линде. В <b class="n">1875</b> году на Spaten заработала одна из первых надёжных холодильных машин. Теперь пиво низового брожения можно было варить круглый год, а не только зимой. К тому времени Spaten уже стала крупнейшей пивоварней города.</p>
-<p><span class="runin">Мерцен и хелль.</span> В <b class="n">1872</b> году на Октоберфесте, в шатре Schottenhamel, впервые подали янтарное «мартовское» пиво (Märzen) по венскому рецепту. Его сварил Йозеф Зедльмайр, брат Габриэля, на своей пивоварне Franziskaner-Leistbräu. В <b class="n">1922</b> году она объединилась со Spaten. А в <b class="n">1894</b> году Spaten первой в Мюнхене сварила светлый лагер «по пильзенскому образцу» — сначала для продажи на севере Германии. В Мюнхене «Мюнхенер хелль» появился в продаже в <b class="n">1895</b> году и стал любимым пивом города.</p>
-<p><span class="runin">Лопата на гербе.</span> Эмблему с лопатой и буквами G и S (Габриэль Зедльмайр) нарисовал в <b class="n">1884</b> году знаменитый график и геральдист Отто Хупп. Её используют до сих пор.</p>
-<p><span class="runin">Сегодня.</span> С <b class="n">1997</b> года Spaten и Löwenbräu входят в одну группу, а с <b class="n">2000-х</b> обе принадлежат концерну AB InBev.</p></div></section></div></div></main>
+<main class="wrap"><header class="hero"><div class="t"><div class="code">Экспонат № 396</div><h1>Литровая кружка Spaten — пивоварни, которая открывает Октоберфест</h1></div>
+<div class="block"><span class="nm">Spaten</span><svg viewBox="0 0 40 80" aria-hidden="true"><rect x="17" y="0" width="6" height="40" fill="#fff"/><rect x="10" y="0" width="20" height="5" rx="2" fill="#fff"/><path d="M6 38h28v24c0 9-6 16-14 16S6 71 6 62z" fill="#fff"/></svg></div></header><div class="valance" aria-hidden="true"></div>
+<div class="layout"><aside class="side"><ul class="passport"><li><span>Производитель</span><b>Stölzle-Oberglas</b></li><li><span>Страна</span><b>Австрия</b></li><li><span>Год</span><b>2011</b></li></ul><div class="spec"><h3>Главное</h3><ul class="facts"><li class="fact"><b>1397</b><span>первое упоминание в налоговых реестрах</span></li><li class="fact"><b>1872</b><span>первый фестивальный Märzen</span></li><li class="fact"><b>10 000</b><span>мест в шатре Schottenhamel</span></li><li class="fact"><b>12:00</b><span>первая суббота: «O’zapft is!»</span></li></ul></div></aside><div><figure class="photo"><img src="img/396.jpg" alt="Литровая кружка Spaten — пивоварни, которая открывает Октоберфест" loading="lazy" onerror="this.parentNode.remove()"></figure><article class="story"><p>Классический литровый стеклянный Масскруг (Maßkrug) знаменитой мюнхенской пивоварни Spaten от одной из <b class="n">6</b>-ти главных пивоварен Октоберфеста.</p>
+<p>Модель кружки называется Isar Seidel (Изарский за́йдель) — это абсолютная классика немецкой пивной посуды, название дано в честь реки Изар, на которой стоит Мюнхен.</p>
+<figure class="fig "><div class="fr">O’zapft is!</div><div class="fig-art"><svg class="art" viewBox="0 0 300 230" role="img" aria-label="Ровно в 12:00 — «O’zapft is!»" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="230" rx="14" fill="#fffdf8"/><svg x="10" y="10" width="280" height="210" viewBox="0 0 260 232" ><defs><linearGradient id="wd863" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4520"/><stop offset=".45" stop-color="#cf9152"/><stop offset=".6" stop-color="#c08045"/><stop offset="1" stop-color="#6e3d1a"/></linearGradient></defs>
+<path d="M150 186 l-20 30 M230 186 l20 30 M126 216 h128" stroke="#4a2c14" stroke-width="7" stroke-linecap="round"/>
+<path d="M150 186 l-20 30 M230 186 l20 30" stroke="#8a5a2b" stroke-width="3" stroke-linecap="round"/>
+<path d="M80 58 Q160 44 240 58 Q252 110 240 162 Q160 176 80 162 Z" fill="url(#wd863)" stroke="#3e2410" stroke-width="2"/>
+<path d="M84 65.1 C130.2 63.5 191.8 65.3 238 64.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 71.2 C130.2 71.8 191.8 71.9 238 70.3" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 77.3 C130.2 74.4 191.8 79.3 238 76.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 83.4 C130.2 81.8 191.8 86.4 238 83.4" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 89.6 C130.2 91.6 191.8 89.4 238 89.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 95.7 C130.2 93.6 191.8 96.5 238 96.4" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 101.8 C130.2 102.0 191.8 103.3 238 102.2" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 107.9 C130.2 105.3 191.8 109.5 238 108.1" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 114.1 C130.2 112.9 191.8 111.2 238 114.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 120.2 C130.2 120.0 191.8 121.5 238 120.9" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 126.3 C130.2 127.6 191.8 128.8 238 126.1" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 132.4 C130.2 134.2 191.8 132.1 238 133.3" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 138.6 C130.2 140.8 191.8 136.1 238 137.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 144.7 C130.2 143.0 191.8 147.5 238 144.6" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 150.8 C130.2 151.6 191.8 149.6 238 150.8" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M84 156.9 C130.2 156.3 191.8 156.0 238 157.1" fill="none" stroke="#6b3d18" stroke-width=".6" opacity=".45"/><path d="M80 70 Q160 66.8 240 70" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 82 Q160 79.8 240 82" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 94 Q160 92.7 240 94" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 106 Q160 105.7 240 106" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 118 Q160 118.6 240 118" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 130 Q160 131.6 240 130" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 142 Q160 144.6 240 142" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M80 154 Q160 157.5 240 154" fill="none" stroke="#5a3214" stroke-width="1.1" opacity=".65"/><path d="M120 58 Q128 110 120 162" fill="none" stroke="#2c2a28" stroke-width="7"/><path d="M118.5 60 Q126.5 110 118.5 160" fill="none" stroke="#6d6a66" stroke-width="1.2"/><circle cx="122.5" cy="70.5" r="1.3" fill="#9a958e"/><circle cx="125.0" cy="110.0" r="1.3" fill="#9a958e"/><circle cx="122.5" cy="149.5" r="1.3" fill="#9a958e"/><path d="M200 58 Q208 110 200 162" fill="none" stroke="#2c2a28" stroke-width="7"/><path d="M198.5 60 Q206.5 110 198.5 160" fill="none" stroke="#6d6a66" stroke-width="1.2"/><circle cx="202.5" cy="70.5" r="1.3" fill="#9a958e"/><circle cx="205.0" cy="110.0" r="1.3" fill="#9a958e"/><circle cx="202.5" cy="149.5" r="1.3" fill="#9a958e"/>
+<path d="M96 66 Q160 56 228 66" stroke="#fff" stroke-width="3" opacity=".22" fill="none"/>
+<ellipse cx="80" cy="110" rx="34" ry="52" fill="#cf9152" stroke="#3e2410" stroke-width="3"/><line x1="56" y1="73.2" x2="56" y2="146.8" stroke="#7a4a22" stroke-width=".7" opacity=".55"/><line x1="66" y1="62.6" x2="66" y2="157.4" stroke="#7a4a22" stroke-width=".7" opacity=".55"/><line x1="76" y1="58.4" x2="76" y2="161.6" stroke="#7a4a22" stroke-width=".7" opacity=".55"/><line x1="86" y1="58.8" x2="86" y2="161.2" stroke="#7a4a22" stroke-width=".7" opacity=".55"/><line x1="96" y1="64.1" x2="96" y2="155.9" stroke="#7a4a22" stroke-width=".7" opacity=".55"/><ellipse cx="80" cy="110" rx="6" ry="9" fill="none" stroke="#7a4a22" stroke-width=".9" opacity=".6"/><ellipse cx="80" cy="110" rx="12" ry="18" fill="none" stroke="#7a4a22" stroke-width=".9" opacity=".6"/><ellipse cx="80" cy="110" rx="18" ry="27" fill="none" stroke="#7a4a22" stroke-width=".9" opacity=".6"/><ellipse cx="80" cy="110" rx="24" ry="36" fill="none" stroke="#7a4a22" stroke-width=".9" opacity=".6"/>
+<ellipse cx="80" cy="110" rx="34" ry="52" fill="none" stroke="#2c2a28" stroke-width="6"/>
+<ellipse cx="80" cy="110" rx="30" ry="47" fill="none" stroke="#6d6a66" stroke-width="1"/>
+<rect x="44" y="104" width="34" height="12" rx="3" fill="#e2b64a" stroke="#7a5814" stroke-width="1.2"/><rect x="46" y="106" width="30" height="3" rx="1.5" fill="#fff3c0" opacity=".7"/>
+<rect x="46" y="92" width="8" height="14" rx="2" fill="#b8862a" stroke="#7a5814" stroke-width=".8"/>
+<path class="stream" d="M50 116 q-4 30 -2 48" stroke="#f0a92f" stroke-width="5" fill="none" stroke-linecap="round"/>
+<svg x="18" y="150" width="60" height="74" viewBox="0 0 130 160" ><defs><linearGradient id="g864" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b5650d"/><stop offset=".28" stop-color="#f0a92f"/><stop offset=".45" stop-color="#fbd36e"/><stop offset=".72" stop-color="#e8962a"/><stop offset="1" stop-color="#a4580b"/></linearGradient>
+<radialGradient id="dg867" cx=".38" cy=".35" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".55" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="sh866" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000"/><stop offset=".6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="gl868" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".0"/><stop offset=".7" stop-color="#3a1d00" stop-opacity="0"/><stop offset="1" stop-color="#3a1d00" stop-opacity=".38"/></linearGradient>
+<clipPath id="c865"><rect x="25.5" y="47" width="63" height="98" rx="5"/></clipPath></defs>
+<path d="M90 50 C 125 52, 125 122, 90 126" fill="none" stroke="#7f979f" stroke-width="13.5" stroke-linecap="round"/>
+<path d="M90 50 C 125 52, 125 122, 90 126" fill="none" stroke="#e9f2f4" stroke-width="10.4" stroke-linecap="round"/>
+<path d="M92 56 C 117 59, 117 116, 92 120" fill="none" stroke="#b9cbd1" stroke-width="2"/>
+<path d="M90 50 C 125 52, 125 122, 90 126" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".95" transform="translate(-1.4 -1)"/>
+<rect x="22" y="34" width="70" height="116" rx="8" fill="#eef6f8" stroke="#7f979f" stroke-width="1.7"/>
+<g clip-path="url(#c865)"><rect x="22" y="34" width="70" height="116" fill="url(#g864)"/><g><circle class="bub" cx="58.7" cy="120.1" r="1.6" fill="#fff" opacity=".8" style="animation-delay:-2.7s"/><circle class="bub" cx="79.2" cy="107.4" r="1.7" fill="#fff" opacity=".8" style="animation-delay:-1.3s"/><circle class="bub" cx="45.8" cy="91.8" r="1.3" fill="#fff" opacity=".8" style="animation-delay:-0.5s"/><circle class="bub" cx="43.9" cy="121.6" r="1.6" fill="#fff" opacity=".8" style="animation-delay:-2.3s"/><circle class="bub" cx="33.0" cy="89.9" r="1.1" fill="#fff" opacity=".8" style="animation-delay:-1.7s"/><circle class="bub" cx="76.7" cy="132.5" r="1.7" fill="#fff" opacity=".8" style="animation-delay:-1.8s"/><circle class="bub" cx="64.9" cy="103.2" r="1.1" fill="#fff" opacity=".8" style="animation-delay:-0.6s"/><circle class="bub" cx="59.0" cy="121.4" r="1.4" fill="#fff" opacity=".8" style="animation-delay:-1.2s"/><circle class="bub" cx="52.6" cy="100.7" r="1.6" fill="#fff" opacity=".8" style="animation-delay:-1.7s"/><circle class="bub" cx="71.4" cy="133.2" r="1.1" fill="#fff" opacity=".8" style="animation-delay:-0.4s"/><circle class="bub" cx="44.4" cy="138.7" r="1.6" fill="#fff" opacity=".8" style="animation-delay:-1.2s"/><circle class="bub" cx="73.0" cy="106.1" r="1.7" fill="#fff" opacity=".8" style="animation-delay:-0.3s"/></g>
+<rect x="22" y="34" width="70" height="116" fill="url(#gl868)"/></g>
+<path d="M25 47 H89" stroke="#fff3c6" stroke-width="1.2" opacity=".8"/>
+<ellipse cx="33" cy="58.0" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M27.6 58.0 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M28.4 56.0 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="49" cy="58.0" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M43.6 58.0 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M44.4 56.0 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="65" cy="58.0" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M59.6 58.0 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M60.4 56.0 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="81" cy="58.0" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M75.6 58.0 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M76.4 56.0 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="41" cy="76.9" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M35.6 76.9 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M36.4 74.9 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="57" cy="76.9" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M51.6 76.9 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M52.4 74.9 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="73" cy="76.9" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M67.6 76.9 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M68.4 74.9 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="33" cy="95.7" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M27.6 95.7 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M28.4 93.7 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="81" cy="95.7" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M75.6 95.7 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M76.4 93.7 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="41" cy="114.6" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M35.6 114.6 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M36.4 112.6 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="73" cy="114.6" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M67.6 114.6 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M68.4 112.6 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="33" cy="133.4" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M27.6 133.4 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M28.4 131.4 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="49" cy="133.4" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M43.6 133.4 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M44.4 131.4 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="65" cy="133.4" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M59.6 133.4 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M60.4 131.4 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/><ellipse cx="81" cy="133.4" rx="5.6" ry="6.6" fill="url(#dg867)"/><path d="M75.6 133.4 a5.6 6.6 0 0 0 10.8 0" fill="none" stroke="#7a4708" stroke-width=".7" opacity=".45"/><path d="M76.4 131.4 a5 6 0 0 1 7 -4" fill="none" stroke="#fff" stroke-width=".9" opacity=".85"/>
+<rect x="24" y="141" width="66" height="7.5" rx="3" fill="#dfeaee" stroke="#9fb3ba" stroke-width=".8"/>
+<rect x="27" y="142.5" width="44" height="1.6" rx=".8" fill="#fff" opacity=".9"/>
+<rect x="28.2" y="51" width="3.4" height="84" rx="1.7" fill="#fff" opacity=".72"/>
+<rect x="33.4" y="56" width="1.4" height="70" rx=".7" fill="#fff" opacity=".45"/>
+<rect x="85" y="50" width="3.2" height="86" rx="1.6" fill="#6b3a05" opacity=".25"/>
+<ellipse cx="57" cy="99.0" rx="16" ry="19" fill="#d8ab45"/>
+<ellipse cx="57" cy="99.0" rx="14.4" ry="17.4" fill="#1d3a78"/>
+<ellipse cx="57" cy="99.0" rx="11.2" ry="14" fill="none" stroke="#d8ab45" stroke-width=".8" stroke-dasharray="1.2 1.4"/>
+<path d="M48 90.0 q9 -6 18 0" fill="none" stroke="#fff" stroke-width=".9" opacity=".4"/>
+
+<defs><linearGradient id="fg869" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffefa"/><stop offset=".7" stop-color="#fbf3df"/><stop offset="1" stop-color="#eadcbc"/></linearGradient></defs><circle cx="22.0" cy="37.0" r="8.3" fill="#d6c6a2"/><circle cx="32.0" cy="31.4" r="9.6" fill="#d6c6a2"/><circle cx="42.0" cy="34.4" r="10.9" fill="#d6c6a2"/><circle cx="52.0" cy="31.4" r="9.0" fill="#d6c6a2"/><circle cx="62.0" cy="34.4" r="10.2" fill="#d6c6a2"/><circle cx="72.0" cy="31.4" r="8.3" fill="#d6c6a2"/><circle cx="82.0" cy="34.4" r="9.6" fill="#d6c6a2"/><circle cx="92.0" cy="34.0" r="10.9" fill="#d6c6a2"/><rect x="21" y="35" width="72" height="7.7" fill="url(#fg869)"/><circle cx="22.0" cy="37.0" r="7.3" fill="url(#fg869)"/><circle cx="32.0" cy="31.4" r="8.6" fill="url(#fg869)"/><circle cx="42.0" cy="34.4" r="9.9" fill="url(#fg869)"/><circle cx="52.0" cy="31.4" r="8.0" fill="url(#fg869)"/><circle cx="62.0" cy="34.4" r="9.2" fill="url(#fg869)"/><circle cx="72.0" cy="31.4" r="7.3" fill="url(#fg869)"/><circle cx="82.0" cy="34.4" r="8.6" fill="url(#fg869)"/><circle cx="92.0" cy="34.0" r="9.9" fill="url(#fg869)"/><circle cx="19.4" cy="34.4" r="2.3" fill="#fff" opacity=".9"/><circle cx="29.0" cy="28.4" r="2.8" fill="#fff" opacity=".9"/><circle cx="38.5" cy="31.0" r="3.2" fill="#fff" opacity=".9"/><circle cx="49.2" cy="28.6" r="2.5" fill="#fff" opacity=".9"/><circle cx="58.8" cy="31.2" r="3.0" fill="#fff" opacity=".9"/><circle cx="69.4" cy="28.9" r="2.3" fill="#fff" opacity=".9"/><circle cx="79.0" cy="31.4" r="2.8" fill="#fff" opacity=".9"/><circle cx="88.5" cy="30.5" r="3.2" fill="#fff" opacity=".9"/><circle cx="75.1" cy="36.7" r="1.1" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="57.9" cy="29.9" r="0.8" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="66.8" cy="33.5" r="0.9" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="85.0" cy="32.7" r="0.8" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="47.8" cy="36.1" r="0.9" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="80.1" cy="28.7" r="0.9" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="78.2" cy="37.6" r="0.7" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="47.7" cy="37.3" r="0.5" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="75.9" cy="36.8" r="1.0" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="83.6" cy="30.8" r="0.9" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="91.0" cy="33.5" r="0.7" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="49.9" cy="32.7" r="0.8" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="78.4" cy="29.0" r="0.6" fill="none" stroke="#d2bf96" stroke-width=".6"/><circle cx="37.9" cy="30.4" r="0.7" fill="none" stroke="#d2bf96" stroke-width=".6"/>
+<path d="M88 40 q4 2 4 9 q0 4 -3 4 q-2 -1 -1.5 -5z" fill="#fbf3df" stroke="#d6c6a2" stroke-width=".7"/>
+<path d="M30 40 q-2 6 0 10 q2 1 3 -2 q0 -4 -1 -8z" fill="#fbf3df" stroke="#d6c6a2" stroke-width=".6"/></svg>
+<circle class="pop" cx="40" cy="118" r="3.4" fill="#f4b43a" style="animation-delay:-0s"/><circle class="pop" cx="34" cy="100" r="2.4" fill="#f4b43a" style="animation-delay:-0.4s"/><circle class="pop" cx="48" cy="92" r="2" fill="#f4b43a" style="animation-delay:-0.8s"/><circle class="pop" cx="28" cy="130" r="2.6" fill="#f4b43a" style="animation-delay:-1.2s"/><circle class="pop" cx="52" cy="132" r="2" fill="#f4b43a" style="animation-delay:-1.6s"/>
+<g class="mallet" style="transform-origin:160px 20px"><path d="M160 20 L96 92" stroke="#6b4021" stroke-width="7" stroke-linecap="round"/><path d="M160 20 L96 92" stroke="#a0703f" stroke-width="3" stroke-linecap="round"/>
+<g transform="rotate(-48 93 93)"><rect x="74" y="80" width="38" height="26" rx="4" fill="#b07a45" stroke="#4a2c14" stroke-width="2"/>
+<rect x="74" y="80" width="6" height="26" fill="#2c2a28"/><rect x="106" y="80" width="6" height="26" fill="#2c2a28"/></g></g>
+<text x="250" y="40" text-anchor="end" font-size="21" font-weight="700" fill="#c4122f" font-family="'UnifrakturMaguntia', Georgia, serif" class="shout">O’zapft is!</text></svg></svg></div><figcaption>Ровно в 12:00 — «O’zapft is!»</figcaption></figure>
+<p>Название Spaten переводится с немецкого как «Лопата». Логотип этой пивоварни (изображение солодовой лопаты с инициалами GS) — один из самых узнаваемых в мире. Пивоварня является одной из старейших в Мюнхене.</p>
+<figure class="plate ms" style="--ink:#b3121b"><div class="plate-k">Spaten: вехи истории</div><ol class="mst"><li><b>1397</b><span>первое упоминание в налоговых реестрах</span></li><li><b>1622</b><span>семья Шпат — пивоварня становится «Spaten»</span></li><li><b>1807</b><span>пивоварню покупает Габриэль Седльмайр-старший</span></li><li><b>1872</b><span>первый фестивальный Märzen</span></li><li><b>1884</b><span>Отто Хупп рисует эмблему с лопатой</span></li><li><b>1894</b><span>первый в Мюнхене светлый лагер — Münchner Hell</span></li></ol><figcaption>Годы и события — из описания экспоната.</figcaption></figure></article><div class="divider" aria-hidden="true"><svg class="art" viewBox="0 0 800 40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M0 6 Q400.0 22 800 6" fill="none" stroke="#5a4632" stroke-width="1.2"/><path class="flap" d="M2 7.1 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:15px 7px;animation-delay:-0.0s"/><path class="flap" d="M32 9.1 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:45px 9px;animation-delay:-0.3s"/><path class="flap" d="M62 10.9 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:75px 11px;animation-delay:-0.6s"/><path class="flap" d="M92 12.6 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:105px 13px;animation-delay:-0.9s"/><path class="flap" d="M122 14.1 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:135px 14px;animation-delay:-1.2s"/><path class="flap" d="M152 15.4 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:165px 15px;animation-delay:-0.0s"/><path class="flap" d="M182 16.6 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:195px 17px;animation-delay:-0.3s"/><path class="flap" d="M212 17.6 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:225px 18px;animation-delay:-0.6s"/><path class="flap" d="M242 18.5 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:255px 19px;animation-delay:-0.9s"/><path class="flap" d="M272 19.2 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:285px 19px;animation-delay:-1.2s"/><path class="flap" d="M302 19.7 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:315px 20px;animation-delay:-0.0s"/><path class="flap" d="M332 20.1 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:345px 20px;animation-delay:-0.3s"/><path class="flap" d="M362 20.3 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:375px 20px;animation-delay:-0.6s"/><path class="flap" d="M392 20.4 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:405px 20px;animation-delay:-0.9s"/><path class="flap" d="M422 20.3 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:435px 20px;animation-delay:-1.2s"/><path class="flap" d="M452 20.0 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:465px 20px;animation-delay:-0.0s"/><path class="flap" d="M482 19.6 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:495px 20px;animation-delay:-0.3s"/><path class="flap" d="M512 19.0 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:525px 19px;animation-delay:-0.6s"/><path class="flap" d="M542 18.2 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:555px 18px;animation-delay:-0.9s"/><path class="flap" d="M572 17.3 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:585px 17px;animation-delay:-1.2s"/><path class="flap" d="M602 16.2 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:615px 16px;animation-delay:-0.0s"/><path class="flap" d="M632 15.0 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:645px 15px;animation-delay:-0.3s"/><path class="flap" d="M662 13.6 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:675px 14px;animation-delay:-0.6s"/><path class="flap" d="M692 12.0 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:705px 12px;animation-delay:-0.9s"/><path class="flap" d="M722 10.3 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:735px 10px;animation-delay:-1.2s"/><path class="flap" d="M752 8.4 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:765px 8px;animation-delay:-0.0s"/><path class="flap" d="M782 6.4 h26 l-13 22z" fill="#fffdf8" stroke="#b3121b" stroke-width=".7" style="transform-origin:795px 6px;animation-delay:-0.3s"/></svg></div><section class="history"><div class="fr fr-h">Geschichte</div><h2>История пивоварни:</h2><div class="body"><p>Впервые она упоминается в налоговых реестрах <b class="n">1397</b> года под именем Welser Prew на улице Кауфингерштрассе. В течение последующих четырех веков она многократно меняла владельцев.</p>
+<p>В <b class="n">1622</b> году пивоварню приобретает семья Шпат (Spatt). Они переименовывают её в свою честь — Spaten. Солодовая лопата (главный инструмент, которым пивовары вручную ворошили прорастающий ячмень на току) стала идеальным говорящим гербом, обыгрывающим фамилию владельцев.</p>
+<p class="rp"><span class="runin">Династия Седльмайров и Технологическая революция:</span> В <b class="n">1807</b> году пивоварню покупает Габриэль Седльмайр-старший, бывший придворный пивовар баварского королевского двора. Именно его сыновья — Габриэль-младший и Иосиф — превратили Spaten в передовое предприятие Европы.</p>
+<p>Габриэль Седльмайр-младший <mark>тайно шпионил на британских пивоварнях</mark>, чтобы привезти в Мюнхен технологию парового двигателя и новые методы контроля температуры.</p>
+<p>В <b class="n">1872</b> году Spaten совершает революцию: они первыми выводят на рынок янтарное фестивальное пиво Märzen (Мартовское), которое на долгие десятилетия стало официальным стилем Октоберфеста.</p>
+<p>В <b class="n">1894</b> году Spaten наносит еще один исторический удар: вопреки протестам консервативных мюнхенских коллег, они первыми в городе сварили и успешно запустили светлый лагер — знаменитый Münchner Hell.</p>
+<p>Современный вид эмблемы (красный щит с белой лопатой и буквами G и S в честь Габриэля Седльмайра) разработал в <b class="n">1884</b> году один из величайших немецких графиков — геральдист Отто Хупп.</p>
+<p class="pull">Пивоварня Spaten обладает абсолютным и священным эксклюзивом на Октоберфесте. <mark>Именно они открывают фестиваль!</mark></p>
+<p class="rp"><span class="runin">Шатер Schottenhamel (Шоттенхамель):</span> Флагманский павильон Spaten на Лугу Терезы — это старейший шатер фестиваля (ставится с <b class="n">1867</b> года). Сегодня его вместимость составляет колоссальные <b class="n">10 000 мест</b> (<b class="n">6 000</b> внутри павильона и <b class="n">4 000</b> в пивном саду).</p>
+<p>Ровно в <b class="n">12:00</b> в первую субботу фестиваля действующий обер-бургомистр (мэр) Мюнхена заходит именно в шатер Schottenhamel. Под прицелом сотен телекамер он тяжелым деревянным молотком должен вбить кран в бочку пива Spaten. Как только кран вбит, мэр кричит легендарное: «O’zapft is!» («Откупорено!»). Только после этого момента остальные шатры на Лугу получают законное право наливать пиво гостям. Первая налитая кружка Spaten по традиции всегда вручается Премьер-министру Баварии.</p>
+<aside class="note"><p>Кружка сделана в Австрии в <b class="n">2011</b> году! На дне четко выштамповано «AUSTRIA» и знаменитый фирменный знак — стилизованная корона, переходящая в букву S. Это клеймо легендарного австрийского стекольного завода Stölzle-Oberglas (завод в г. Пёхларн), который входит в группу компаний SAHM. Концерн SAHM часто распределяет заказы для Октоберфеста между своими немецкими, австрийскими и чешскими мощностями.</p></aside></div></section></div></div></main>
 <nav class="wrap pager" aria-label="Навигация"><a class="prev" href="395а.html">← № 395 а</a><a class="home" href="index.html">Вся коллекция</a><a class="next" href="397.html">№ 397 →</a></nav>
-<footer class="foot">Пивные кружки Октоберфеста · № 396</footer>
+<div class="treats" aria-hidden="true"><svg class="art" viewBox="0 0 900 40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M0 6 Q450.0 22 900 6" fill="none" stroke="#5a4632" stroke-width="1.2"/><path class="flap" d="M2 6.9 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:15px 7px;animation-delay:-0.0s"/><path class="flap" d="M32 8.7 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:45px 9px;animation-delay:-0.3s"/><path class="flap" d="M62 10.4 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:75px 10px;animation-delay:-0.6s"/><path class="flap" d="M92 11.9 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:105px 12px;animation-delay:-0.9s"/><path class="flap" d="M122 13.3 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:135px 13px;animation-delay:-1.2s"/><path class="flap" d="M152 14.6 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:165px 15px;animation-delay:-0.0s"/><path class="flap" d="M182 15.8 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:195px 16px;animation-delay:-0.3s"/><path class="flap" d="M212 16.8 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:225px 17px;animation-delay:-0.6s"/><path class="flap" d="M242 17.7 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:255px 18px;animation-delay:-0.9s"/><path class="flap" d="M272 18.5 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:285px 18px;animation-delay:-1.2s"/><path class="flap" d="M302 19.1 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:315px 19px;animation-delay:-0.0s"/><path class="flap" d="M332 19.6 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:345px 20px;animation-delay:-0.3s"/><path class="flap" d="M362 20.0 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:375px 20px;animation-delay:-0.6s"/><path class="flap" d="M392 20.3 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:405px 20px;animation-delay:-0.9s"/><path class="flap" d="M422 20.4 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:435px 20px;animation-delay:-1.2s"/><path class="flap" d="M452 20.4 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:465px 20px;animation-delay:-0.0s"/><path class="flap" d="M482 20.3 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:495px 20px;animation-delay:-0.3s"/><path class="flap" d="M512 20.0 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:525px 20px;animation-delay:-0.6s"/><path class="flap" d="M542 19.6 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:555px 20px;animation-delay:-0.9s"/><path class="flap" d="M572 19.1 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:585px 19px;animation-delay:-1.2s"/><path class="flap" d="M602 18.5 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:615px 18px;animation-delay:-0.0s"/><path class="flap" d="M632 17.7 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:645px 18px;animation-delay:-0.3s"/><path class="flap" d="M662 16.8 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:675px 17px;animation-delay:-0.6s"/><path class="flap" d="M692 15.8 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:705px 16px;animation-delay:-0.9s"/><path class="flap" d="M722 14.6 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:735px 15px;animation-delay:-1.2s"/><path class="flap" d="M752 13.3 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:765px 13px;animation-delay:-0.0s"/><path class="flap" d="M782 11.9 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:795px 12px;animation-delay:-0.3s"/><path class="flap" d="M812 10.4 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:825px 10px;animation-delay:-0.6s"/><path class="flap" d="M842 8.7 h26 l-13 22z" fill="#ffffff" stroke="#b3121b" stroke-width=".7" style="transform-origin:855px 9px;animation-delay:-0.9s"/><path class="flap" d="M872 6.9 h26 l-13 22z" fill="#b3121b" stroke="#b3121b" stroke-width=".7" style="transform-origin:885px 7px;animation-delay:-1.2s"/></svg><div class="tr3"><svg class="art" viewBox="0 0 120 96" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#5e3412" stroke-width="15" stroke-linecap="round"/><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#9a5a24" stroke-width="11" stroke-linecap="round"/><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#d99a5c" stroke-width="3" stroke-linecap="round" opacity=".6" transform="translate(-1 -2)"/><rect x="24" y="34" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(20 24 34)"/><rect x="40" y="18" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-10 40 18)"/><rect x="78" y="20" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(30 78 20)"/><rect x="96" y="36" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-20 96 36)"/><rect x="34" y="76" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(10 34 76)"/><rect x="60" y="82" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-30 60 82)"/><rect x="88" y="74" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(15 88 74)"/><rect x="60" y="44" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(0 60 44)"/></svg><svg class="art" viewBox="0 0 160 150" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M54 22 Q80 -14 106 22" fill="none" stroke="#c4122f" stroke-width="3"/>
+<path d="M80 146 C24 108 2 70 18 38 C34 6 70 8 80 34 C90 8 126 6 142 38 C158 70 136 108 80 146 Z" fill="#8a4b25"/><path d="M80 146 C24 108 2 70 18 38 C34 6 70 8 80 34 C90 8 126 6 142 38 C158 70 136 108 80 146 Z" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="1 7" stroke-linecap="round" transform="translate(8 7) scale(.9)"/>
+<circle cx="126.0" cy="70.0" r="3.4" fill="#e45b8f"/><circle cx="117.2" cy="93.5" r="3.4" fill="#5bb3e4"/><circle cx="94.2" cy="108.0" r="3.4" fill="#f2d14e"/><circle cx="65.8" cy="108.0" r="3.4" fill="#e45b8f"/><circle cx="42.8" cy="93.5" r="3.4" fill="#5bb3e4"/><circle cx="34.0" cy="70.0" r="3.4" fill="#f2d14e"/><circle cx="42.8" cy="46.5" r="3.4" fill="#e45b8f"/><circle cx="65.8" cy="32.0" r="3.4" fill="#5bb3e4"/><circle cx="94.2" cy="32.0" r="3.4" fill="#f2d14e"/><circle cx="117.2" cy="46.5" r="3.4" fill="#e45b8f"/>
+<text x="80" y="84" text-anchor="middle" font-size="27" fill="#fff" font-family="'Yeseva One', serif">Prost!</text></svg><svg class="art" viewBox="0 0 120 96" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#5e3412" stroke-width="15" stroke-linecap="round"/><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#9a5a24" stroke-width="11" stroke-linecap="round"/><path d="M18 52 C10 88 110 88 102 52 M18 52 C14 18 50 8 62 34 C70 52 74 64 80 78 M102 52 C106 18 70 8 58 34 C50 52 46 64 40 78" fill="none" stroke="#d99a5c" stroke-width="3" stroke-linecap="round" opacity=".6" transform="translate(-1 -2)"/><rect x="24" y="34" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(20 24 34)"/><rect x="40" y="18" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-10 40 18)"/><rect x="78" y="20" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(30 78 20)"/><rect x="96" y="36" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-20 96 36)"/><rect x="34" y="76" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(10 34 76)"/><rect x="60" y="82" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(-30 60 82)"/><rect x="88" y="74" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(15 88 74)"/><rect x="60" y="44" width="3" height="2.4" rx=".6" fill="#fff" transform="rotate(0 60 44)"/></svg></div></div><footer class="foot">Пивные кружки Октоберфеста · № 396</footer>
 <script>
 (function(){var d=document.documentElement,bar=document.querySelector('.progress'),t=0;
 function upd(){t=0;if(!bar)return;var h=d.scrollHeight-innerHeight;bar.style.setProperty('--p',h>0?Math.min(1,Math.max(0,scrollY/h)):0)}
 addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();
 if(!d.classList.contains('js'))return;
 try{
-var sel='.facts .fact,.photo,.story>p,.story>ul.list>li,.history h2,.history .body>p,.history .body>ul.list>li,.timeline,.tl-item,.grp h2,.item,.pager';
+var sel='.passport,.facts .fact,.photo,.story>p,.story>h3,.story>aside,.story>ul.list>li,.history h2,.history .body>p,.history .body>h3,.history .body>aside,.history .body>ul.list>li,.timeline,.tl-item,.grp h2,.item,.pager,.fig,.divider,.plate,.treats';
 var els=[].slice.call(document.querySelectorAll(sel));
 els.forEach(function(e){e.classList.add('rv')});
 var io=new IntersectionObserver(function(en){var i=0;en.forEach(function(e){if(!e.isIntersecting)return;var x=e.target;
